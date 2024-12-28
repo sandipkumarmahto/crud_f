@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import Navbar from "./Navbar.js";
 import { useNavigate } from "react-router-dom";
+import "./styles.css"
 
 
 function  HomePage() {
@@ -65,6 +66,8 @@ function  HomePage() {
       <th>Name</th>
       <th>mobile</th>
       <th>email</th>
+      <th>username</th>
+      <th>ps</th>
       <th>action</th>
     </tr>
   </thead>
@@ -75,6 +78,8 @@ function  HomePage() {
             <td>{users.fullName}</td>
             <td>{users.mobile}</td>
             <td>{users.email}</td>
+            <td>{users.username}</td>
+            <td>{users.ps}</td>
             <td>
               <button
                 className="btn btn-primary btn-sm me-2"
@@ -97,11 +102,11 @@ function  HomePage() {
   <tfoot>
     <tr>
       <th>Name</th>
-      <th>Position</th>
-      <th>Office</th>
-      <th>Age</th>
-      <th>Start date</th>
-      <th>Salary</th>
+      <th>mobile</th>
+      <th>email</th>
+      <th>username</th>
+      <th>ps</th>
+      <th></th>
     </tr>
   </tfoot>
 </table>

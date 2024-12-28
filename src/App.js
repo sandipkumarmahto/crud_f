@@ -5,6 +5,7 @@ import RegisterPage from "./Component/RegisterPage.js";
 import EditPage from "./Component/Editpage.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import SamplePage from "./Component/SamplePage.js";
+import LoginPage from "./Component/LoginPage.js";
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<HomePage />} />
+        <Route path='/login' element={<LoginPage />} />
         <Route path='/about' element={<AboutPage />} />
         <Route path='/register' element={<RegisterPage />} />
         <Route path='/sample/:id' element={<SamplePage />} />
